@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forget password</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <style>
+                        #msg{
+                visibility: hidden;
+                min-width: 250px;
+                background-color: yellow;
+                color: black;
+                text-align: center;
+                border-radius: 2px;
+                padding: 16px;
+                position: fixed;
+                z-index: 1;
+                right: 13.5%;
+                top: 30px;
+                font-size: 17px;
+                margin-right: 30px;
+            }
+               #msg.show{
+       visibility: visible;
+       -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+       animation: fadein 0.5s, fadeout 0.5s 2.5s;
+   }
+   @-webkit-keyframes fadein {
+       from {top: 0; opacity: 0;}
+       to { top: 30px; opacity: 1;}
+   }
+   @keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to { top: 30px; opacity: 1;}
+}
+@-webkit-keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to { top: 0; opacity: 0;}
+}
+@keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to { top: 0; opacity: 0;}
+}
+        </style>
+    </head>
+    <body>
+        <section id="header">
+            <div class="container">
+                <img src="img/White logo.png" class="logo">
+            </div>
+
+        <nav id="sideNav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="login.html">SIGN UP</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+     
+            </ul>
+
+        </nav>
+        <img src="img/menu.png" id="menuBtn">
+        <div class="signup">
+            <form>
+                <h2 style="text-align: center;">Forget Password</h2>
+                <h5 style="font-size: 14px; color: rgb(43, 43, 78);">Enter email here that you used for your account. We will send you a link on your email to reset the password</h5>
+                <input type="password" name="username" placeholder="Enter your Email"><br><br>
+                <input type="password" name="username" placeholder="New Password"><br><br>
+                <input type="password" name="username" placeholder="Confirm New Password"><br><br>
+                <input type="button" value="sign up" onclick="myFunction()" ><br><br>
+                <a href="login.html" style="text-decoration: none;">Go back to home page</a>
+                <div id="msg">
+       Your password changed successfully!!
+                </div>
+            </form>
+ </div>
+        </section>
+        
+        <script type="text/javascript" src="js/script.js"></script>
+        </body>
+        </html>
